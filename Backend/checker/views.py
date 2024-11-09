@@ -322,7 +322,7 @@ def get_shodan_info(ip):
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()  # Return Shodan info
-    return "No Shodan information found in this "
+    return "No Shodan information found here"
 
 # Function to get ASN information using IPinfo API
 def get_asn_info(ip):
