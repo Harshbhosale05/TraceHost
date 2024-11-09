@@ -258,6 +258,7 @@ shodan_api_key = 'iy28xuQax9DSociONeAtReOq5S6nhlIq'
 
 # security_trails_api_key = 'TmJLR42vL_jRl1OltlUNdwhtB7zdcc7u'  # SecurityTrails API key
 security_trails_api_key = 'LUggU9k5ozhBWzGFUscd_EmT9Tb3MIp2'
+#hello hii
 
 # Function to get Whois information
 def get_whois_info(domain):
@@ -322,7 +323,7 @@ def get_shodan_info(ip):
     response = requests.get(url)
     if response.status_code == 200:
         return response.json()  # Return Shodan info
-    return "No Shodan information found"
+    return "No Shodan information found here"
 
 # Function to get ASN information using IPinfo API
 def get_asn_info(ip):
