@@ -14,11 +14,11 @@
 
 ## 👥 Collaborators
 
-- [Atharva Dhavale](https://github.com/Atharva-Dhavale) - Project Lead
-- [Harshvardhan Bhosale](https://github.com/Harshbhosale05) - Collaborator
-- [Sarish Sonawane](https://github.com/Sarish05) - Collaborator
-- [Aayush Meghal](https://github.com/Assassin2306) - Collaborator
-- [Kartik Sirsilla](https://github.com/kartiksirsilla09) - Collaborator
+- [Atharva Dhavale](https://github.com/Atharva-Dhavale) 
+- [Harshvardhan Bhosale](https://github.com/Harshbhosale05) 
+- [Sarish Sonawane](https://github.com/Sarish05) 
+- [Aayush Meghal](https://github.com/Assassin2306) 
+- [Kartik Sirsilla](https://github.com/kartiksirsilla09) 
 
 ## ✨ Features
 
