@@ -12,6 +12,14 @@
 
 </div>
 
+## 👥 Collaborators
+
+- [Atharva Dhavale](https://github.com/Atharva-Dhavale) - Project Lead
+- [Assassin2306](https://github.com/Assassin2306) - Collaborator
+- [Sarish05](https://github.com/Sarish05) - Collaborator
+- [Harshbhosale05](https://github.com/Harshbhosale05) - Collaborator
+- [kartiksirsilla09](https://github.com/kartiksirsilla09) - Collaborator
+
 ## ✨ Features
 
 - 🔍 **Domain Analysis**: Analyze domains for suspicious patterns and security risks
