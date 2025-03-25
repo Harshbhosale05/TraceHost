@@ -1,99 +1,122 @@
-# Domain Security Analyzer 🔍💻
+# TraceHost
 
-A comprehensive tool that analyzes domain ownership, hosting, and security data to detect suspicious or malicious domains. It integrates multiple services to provide a full, 360-degree analysis of domains, helping users identify potential threats.
+A modern domain intelligence and security analysis platform for detecting malicious domains and analyzing security threats.
 
-## 🛠️ **Tools and Technologies Used**
+## Features
 
-### Backend Tools:
-1. **Whois Lookup** 🔎  
-   Retrieves domain registration details (e.g., registrar, owner) to verify legitimacy.  
-   *Integration*: Use `whois` library in Python or Django.
+- **Domain Analysis**: Analyze domains for suspicious patterns and security risks
+- **Threat Intelligence**: Check domains against known threat databases
+- **Geolocation Tracking**: Visualize server locations on an interactive map
+- **Security Reporting**: Generate detailed security reports with risk scores
+- **PDF Export**: Export analysis results as PDF for reporting
+- **Minimalist UI**: Clean, modern interface focused on data clarity
 
-2. **Shodan API** 🌐  
-   Provides server details, open ports, and vulnerabilities.  
-   *Integration*: Fetch data with the Shodan API.
+## Getting Started
 
-3. **Amass (Subdomain Enumeration)** 🕵️‍♂️  
-   Identifies hidden subdomains related to the main domain.  
-   *Integration*: Use the Amass API to enumerate subdomains and store results.
+### Prerequisites
 
-4. **SecurityTrails (Historical DNS Records)** 🗓️  
-   Reveals past DNS records to expose hidden IPs or hosting.  
-   *Integration*: Use SecurityTrails API for historical DNS data.
+- Node.js 18.x or higher
+- npm 9.x or higher
+- Backend server running (refer to backend documentation)
 
-5. **SSL Certificate Logs (CRT.sh)** 🔒  
-   Displays SSL certificates, validity, expiration, and vulnerabilities.  
-   *Integration*: Query CRT.sh API for SSL logs.
+### Installation
 
-### Frontend Technologies:
-1. **React** ⚛️  
-   For building dynamic and interactive UI components.  
-   *Usage*: Handles user input, displays results, and manages state.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/TraceHost.git
+   cd TraceHost
+   ```
 
-2. **Axios / Fetch API** 📡  
-   For HTTP requests to the Django backend.  
-   *Usage*: Fetches Whois, Shodan, subdomains, DNS, SSL data, and vulnerabilities.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-3. **Material-UI / Bootstrap** 🎨  
-   Ensures a responsive and clean UI.  
-   *Usage*: Uses cards, tables, collapsible sections for consistent design.
+3. Set up environment variables (see Environment Configuration section)
 
-4. **Interactive Map (Optional)** 🗺️  
-   Displays server location data.  
-   *Usage*: Shows geographical server data via an interactive map.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-5. **Chart.js (Optional)** 📊  
-   Visualizes open ports or vulnerabilities.  
-   *Usage*: Creates charts for quick risk assessment.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
----
+## Environment Configuration
 
-## 📈 **How Data Flows**
+This project uses environment variables for configuration. To set up your environment:
 
-1. **User Input** 🧑‍💻  
-   User enters the domain to analyze on the frontend. The frontend sends the domain data to the backend.
+1. Copy the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
 
-2. **Backend Analysis** ⚙️  
-   The backend processes the domain by calling APIs (Whois, Shodan, Amass, etc.), compiling the data into a structured format.
+2. Update the `.env` file with your specific configuration values, especially:
+   - API keys for external services
+   - Database connection details
+   - Backend server URL
 
-3. **Data Processing** 🔄  
-   Data is organized, formatted, and temporarily stored in PostgreSQL for easy retrieval.
+### Client-side Environment Variables
 
-4. **Frontend Display** 👀  
-   The frontend displays the analyzed data in an organized manner using tables, cards, and charts.
+The following variables are exposed to the browser and should be prefixed with `NEXT_PUBLIC_`:
 
----
+| Variable | Description | Default |
+|----------|-------------|---------|
+| NEXT_PUBLIC_GOOGLE_MAPS_API_KEY | Google Maps API Key for location visualization | - |
+| NEXT_PUBLIC_API_URL | Base URL for API requests | http://localhost:5000/api |
+| NEXT_PUBLIC_BACKEND_URL | Backend server URL | http://localhost:5000 |
+| NEXT_PUBLIC_FRONTEND_URL | Frontend URL for callbacks | http://localhost:3000 |
+| NEXT_PUBLIC_ENABLE_API_LOGGING | Enable detailed API request logging | true |
+| NEXT_PUBLIC_CACHE_TTL | Cache duration in seconds | 300 |
+| NEXT_PUBLIC_REQUEST_TIMEOUT | API request timeout in milliseconds | 120000 |
+| NEXT_PUBLIC_FETCH_TIMEOUT | Fetch timeout in milliseconds | 10000 |
+| NEXT_PUBLIC_API_CHECK_FREQUENCY | How often to check API status (ms) | 30000 |
 
-## 💡 **Key Challenges Addressed**
+### Server-side Environment Variables
 
-1. **Bypassing Cloudflare/Proxies** 🚫  
-   Uses SecurityTrails and Amass to uncover real hosting details hidden behind Cloudflare or other proxies.
+These variables are used server-side and are not exposed to the browser:
 
-2. **Comprehensive Data** 🛡️  
-   Integrates multiple tools to provide a full, 360-degree view of a domain’s security and ownership.
+| Category | Variables |
+|----------|-----------|
+| API Keys | WHOIS_API_KEY, DNS_LOOKUP_API_KEY, THREAT_INTELLIGENCE_API_KEY, etc. |
+| Database | DATABASE_URL, DB_USERNAME, DB_PASSWORD, etc. |
+| Authentication | JWT_SECRET, JWT_EXPIRY |
+| Security | ENCRYPTION_KEY, CORS_ALLOWED_ORIGINS |
+| Email | SMTP_HOST, SMTP_USER, SMTP_PASSWORD, etc. |
 
-3. **User-Friendly Interface** 🖥️  
-   Offers an interactive and clean UI to help users quickly analyze domains and assess potential security risks.
+## Project Structure
 
----
+```
+TraceHost/
+├── Frontend/                  # Next.js frontend application
+│   ├── app/                   # Next.js app router
+│   ├── components/            # Reusable React components
+│   ├── lib/                   # Utilities and API services
+│   ├── public/                # Static assets
+│   └── styles/                # Global CSS styles
+└── Backend/                   # Backend API server (separate repo)
+```
 
-## ⚙️ **Scalability and Performance**
+## Development
 
-- **Backend**: Optimized to handle multiple API requests and large datasets efficiently.  
-- **Database**: PostgreSQL is used for storing and retrieving large-scale data quickly.  
-- **Frontend**: Optimized for responsiveness, ensuring a smooth experience on both desktop and mobile devices.
+### Commands
 
----
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint to check code quality
 
-## 🚀 **Conclusion**
+## Security Best Practices
 
-This tool provides a detailed, user-friendly solution for analyzing suspicious websites by integrating multiple services, including Whois, Shodan, Amass, SecurityTrails, and SSL data. With the power of the Django and React stack, it efficiently handles and displays domain data, helping users detect and assess potential security threats.
+1. Never commit `.env` files to version control
+2. Use different values for development and production
+3. Regularly rotate sensitive credentials
+4. Use strong, unique values for secrets like JWT_SECRET and ENCRYPTION_KEY
+5. Consider using a secrets manager for production deployments
 
----
+## License
 
-Feel free to fork, clone, or contribute to this project! 🛠️  
-[GitHub Repository Link](https://github.com/Atharva-Dhavale/website_checker)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
----
+## Contributing
 
-This version is formatted for clarity and engagement, making it easy for users to understand and navigate your project. Let me know if you need further adjustments!
+Contributions are welcome! Please feel free to submit a Pull Request. 

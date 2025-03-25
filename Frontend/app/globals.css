@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 6.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 263.4 70% 50.4%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+    --chart-1: 262 83% 58%;
+    --chart-2: 191 90% 52%;
+    --chart-3: 43 96% 58%;
+    --chart-4: 323 78% 56%;
+    --chart-5: 170 90% 50%;
+  }
+
+  .dark {
+    --background: 230 30% 8%;
+    --foreground: 210 40% 98%;
+    --card: 229 31% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 229 31% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 261 64% 58%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 262 83% 58%;
+    --chart-1: 191 90% 52%;
+    --chart-2: 262 83% 58%;
+    --chart-3: 43 96% 58%;
+    --chart-4: 323 78% 56%;
+    --chart-5: 170 90% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border font-mono;
+  }
+  body {
+    @apply text-foreground antialiased min-h-screen bg-background;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono font-medium tracking-tight;
+  }
+}
+
+/* Terminal-style text */
+.terminal-text {
+  @apply font-mono tracking-wide;
+}
+
+/* Card styles */
+.card-modern {
+  @apply relative rounded-md border;
+}
+
+/* Scrollbar styling - simplified */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.5);
+}
+
+/* Status indicators */
+.status-indicator {
+  @apply inline-block w-2 h-2 rounded-full;
+}
+
+.status-online {
+  @apply bg-primary;
+}
+
+.status-offline {
+  @apply bg-destructive;
+}
+
+/* Data visualization elements */
+.data-card {
+  @apply border rounded-md p-4 overflow-hidden;
+}
+
+/* Table styles */
+.data-table {
+  @apply w-full border-collapse;
+}
+
+.data-table th {
+  @apply text-xs uppercase tracking-wider px-4 py-2 text-left bg-muted;
+}
+
+.data-table td {
+  @apply px-4 py-2 border-t border-border/50;
+}
+
+.data-table tr:hover {
+  @apply bg-muted/30;
+}
+
+/* Search input styles */
+.search-input {
+  @apply bg-background/80 border pl-10;
+}
+
+/* Feature card */
+.feature-card {
+  @apply p-4 rounded-md border;
+}
+
+/* Simple animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Simple animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease forwards;
+}
+
+/* Badge styles */
+.badge {
+  @apply px-2 py-1 text-xs rounded-full;
+}
+
+.badge-primary {
+  @apply bg-primary text-primary-foreground;
+}
+
+.badge-secondary {
+  @apply bg-secondary text-secondary-foreground;
+}
+
+/* Risk score visualization - improved with gradient */
+.risk-score-container {
+  @apply relative w-full h-2 rounded-full overflow-hidden;
+  background: linear-gradient(to right, 
+    rgb(34, 197, 94) 0%, 
+    rgb(234, 179, 8) 50%, 
+    rgb(239, 68, 68) 100%
+  );
+}
+
+.risk-score-marker {
+  @apply absolute top-0 w-2 h-2 bg-white rounded-full border border-border transform -translate-x-1/2;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout containers */
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+main {
+  @apply flex-1 w-full;
+  padding-top: 4rem;
+}
+
+header {
+  @apply backdrop-blur-sm border-b border-border/40 sticky top-0 z-50 w-full;
+}
+
+.page-content {
+  @apply mx-auto py-6 px-4 sm:px-6 md:py-10;
+  margin-top: 1rem;
+}
+
+.analyze-page-content,
+.docs-page-content {
+  @apply max-w-7xl mx-auto;
+}
+
+.analyze-page-content .container {
+  @apply w-full;
+}
+
+/* Page-specific styles */
+.home-content {
+  @apply pt-12 md:pt-16 flex flex-col items-center;
+}
+
+.home-hero {
+  @apply space-y-6 max-w-3xl mx-auto text-center;
+}
+
+.home-features {
+  @apply grid md:grid-cols-3 gap-6 w-full max-w-5xl mx-auto mt-16;
+}
+
+.feature-box {
+  @apply p-5 border border-border rounded-lg transition-all duration-200;
+}
+
+.feature-box:hover {
+  @apply border-primary/30 bg-accent/5;
+}
+
+.domain-badge {
+  @apply inline-block px-4 py-1 rounded-full border border-border text-sm;
+}
+
+/* Adjust main padding for better spacing */
+main {
+  @apply flex-1 w-full;
+  padding-top: 4rem;
+}
+
+.page-header {
+  @apply mb-8 md:mb-12;
+}
+
+/* Header spacing adjustment */
+header + main {
+  @apply pt-16 md:pt-20;
+}

@@ -1,0 +1,179 @@
+
+> nextjs@0.1.0 dev
+> next dev
+
+  ▲ Next.js 13.5.1
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Ready in 2.1s
+(node:4060) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ Compiled /page in 1255ms (696 modules)
+ ✓ Compiled in 346ms (359 modules)
+ ✓ Compiled /analyze/page in 239ms (876 modules)
+ ✓ Compiled /analyze/results/page in 314ms (1345 modules)
+ ⚠ ./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+
+./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+ ○ compiling /suspicious/page ...
+ ⚠ ./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+
+./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+ ⚠ ./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+
+./app/suspicious/page.tsx
+Attempted import error: 'exportSuspiciousDomains' is not exported from '@/lib/api' (imported as 'exportSuspiciousDomains').
+
+Import trace for requested module:
+./app/suspicious/page.tsx
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[?25h
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGINT')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_tTypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+TYPE'
+}
+TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhav X X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+ X uncaughtException: TypeError [ERR_INVALID_ARG_TYPE]: The "code" argument must be of type number. Received type string ('SIGTERM')
+    at process.set [as exitCode] (node:internal/bootstrap/node:120:9)
+    at process.exit (node:internal/process/per_thread:175:24)
+    at process.cleanup (/Users/atharvadhavale/Files/TraceHost_Updated/Frontend/node_modules/next/dist/server/lib/start-server.js:208:29)
+    at process.emit (node:events:519:35)
+    at Signal.callbackTrampoline (node:internal/async_hooks:130:17) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
