@@ -37,7 +37,22 @@ Before you begin, ensure you have the following installed:
 
 - 📦 **Node.js** 18.x or higher
 - 📦 **npm** 9.x or higher
-- 🖥️ **Backend server** running (refer to backend documentation)
+- 🐍 **Python** 3.9 or higher
+- 📦 **pip** (Python package installer)
+- 🖥️ **Backend dependencies**:
+  - Django 4.2.10
+  - djangorestframework 3.14.0
+  - django-cors-headers 4.3.1
+  - requests 2.31.0
+  - python-whois 0.8.0
+  - dnspython 2.4.2
+  - ipinfo 4.4.3
+  - shodan 1.30.1
+  - google-generativeai 0.3.2
+  - python-decouple 3.8
+  - Pillow 10.2.0
+
+  (All backend dependencies are listed in `Backend/requirements.txt` and will be installed during setup)
 
 ### 🔧 Installation
 
@@ -76,39 +91,86 @@ Navigate to [http://localhost:3000](http://localhost:3000) in your browser
    git clone https://github.com/Atharva-Dhavale/TraceHost.git
    cd TraceHost
    
-   # Install dependencies
+   # Install dependencies for frontend
+   cd Frontend
    npm install
    
-   # Create environment file
+   # Create environment file for frontend
    cp .env.example .env
+   cd ..
+   
+   # Set up backend environment
+   cd Backend
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+   # Install all backend dependencies from requirements.txt
+   pip install -r requirements.txt
+   
+   # The requirements.txt includes all necessary packages:
+   # - Django, DRF, CORS headers for the API server
+   # - requests, python-whois, dnspython for domain analysis
+   # - ipinfo, shodan for threat intelligence
+   # - google-generativeai for AI-powered analysis
+   # - python-decouple for environment management
+   # - Pillow for image processing
+   
+   # Create environment file for backend
+   cp .env.example .env
+   cd ..
    ```
 
 2. **Configure environment variables**:
-   Edit the `.env` file with your API keys, database connection details, and other required configuration. At minimum, you'll need:
-   - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` for map functionality
-   - `NEXT_PUBLIC_API_URL` pointing to your backend server
+   - Edit `Frontend/.env` file with your API keys and configuration:
+     - `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` for map functionality
+     - `NEXT_PUBLIC_API_URL` pointing to your backend server
+   
+   - Edit `Backend/.env` file with your backend configuration:
+     - Database credentials
+     - API keys for external services
+     - Secret key for Django
 
-3. **Build the project**:
+3. **Run backend migrations**:
    ```bash
-   npm run build
+   cd Backend
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   python manage.py migrate
+   cd ..
    ```
 
 ### Starting the Application
 
-#### 👨‍💻 Development Mode
-For development with hot reloading:
+#### 🚀 Using the Automated Script (Recommended)
+
+The easiest way to run both frontend and backend together:
+
 ```bash
-npm run dev
+# Make the script executable (only needed once)
+chmod +x start-dev.sh
+
+# Run the script
+./start-dev.sh
 ```
 
-#### 🚀 Production Mode
-For production deployment:
-```bash
-# Build the application
-npm run build
+This script will:
+- Start the Django backend on http://localhost:8000
+- Start the Next.js frontend on http://localhost:3000
+- Create logs in the `logs` directory
+- Allow stopping both servers with Ctrl+C
 
-# Start the production server
-npm run start
+#### 👨‍💻 Running Manually
+
+**For backend**:
+```bash
+cd Backend
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+python manage.py runserver
+```
+
+**For frontend**:
+```bash
+cd Frontend
+npm run dev
 ```
 
 ### 🧪 Testing
