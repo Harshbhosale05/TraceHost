@@ -86,3 +86,7 @@ coverage/
 # Security
 *.env.local
 *.pem 
+
+
+
+echo "node_modules/" >> .gitignore

@@ -1,234 +1,94 @@
 Watching for file changes with StatReloader
 Performing system checks...
 
-2025-03-24 11:21:30,367 [INFO] Gemini API configured successfully
+2025-03-25 07:04:35,357 [INFO] Gemini API configured successfully
 System check identified no issues (0 silenced).
-March 24, 2025 - 11:21:30
+March 25, 2025 - 07:04:35
 Django version 4.2.10, using settings 'website_checker.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
-[24/Mar/2025 11:21:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:21:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-2025-03-24 11:21:57,738 [INFO] Domain check request received for pict.edu
-2025-03-24 11:21:57,751 [INFO] Analyzing domain for response: pict.edu
-2025-03-24 11:21:57,751 [INFO] Getting WHOIS info for pict.edu
-2025-03-24 11:21:58,730 [INFO] WHOIS lookup completed in 0.98s
-2025-03-24 11:21:58,731 [INFO] Getting DNS info for pict.edu
-2025-03-24 11:21:59,816 [INFO] DNS lookup completed in 1.09s
-2025-03-24 11:21:59,816 [INFO] Getting historical DNS records for pict.edu
-2025-03-24 11:22:01,697 [WARNING] SecurityTrails API returned status code 404
-2025-03-24 11:22:01,702 [INFO] Enumerating subdomains for pict.edu
-2025-03-24 11:22:03,146 [WARNING] SecurityTrails API returned status code 429
-2025-03-24 11:22:03,149 [INFO] Getting ASN info for IP 66.96.149.32
-2025-03-24 11:22:03,797 [INFO] ASN lookup completed in 0.65s
-2025-03-24 11:22:03,798 [INFO] Getting SSL certificate logs for pict.edu
-2025-03-24 11:22:05,797 [WARNING] crt.sh API returned status code 503
-2025-03-24 11:22:05,801 [INFO] Getting Shodan info for IP 66.96.149.32
-2025-03-24 11:22:06,417 [INFO] Shodan lookup completed in 0.62s
-2025-03-24 11:22:06,421 [INFO] Calculating AI-powered risk score for pict.edu
-2025-03-24 11:22:06,421 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
-2025-03-24 11:22:06,421 [INFO] Determining risk factors
-2025-03-24 11:22:06,422 [INFO] Identified 0 risk factors
-2025-03-24 11:22:06,422 [INFO] Generating domain summary using Gemini API
-2025-03-24 11:22:15,635 [INFO] Gemini summary generated in 9.21s
-2025-03-24 11:22:15,639 [INFO] Domain analysis for response completed in 17.89s
-[24/Mar/2025 11:22:15] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 3024
-2025-03-24 11:22:16,066 [INFO] Domain check request received for pict.edu
-2025-03-24 11:22:16,069 [INFO] Analyzing domain for response: pict.edu
-2025-03-24 11:22:16,072 [INFO] Getting WHOIS info for pict.edu
-2025-03-24 11:22:16,787 [INFO] WHOIS lookup completed in 0.71s
-2025-03-24 11:22:16,787 [INFO] Getting DNS info for pict.edu
-2025-03-24 11:22:16,839 [INFO] DNS lookup completed in 0.05s
-2025-03-24 11:22:16,840 [INFO] Getting historical DNS records for pict.edu
-[24/Mar/2025 11:22:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-2025-03-24 11:22:18,219 [WARNING] SecurityTrails API returned status code 404
-2025-03-24 11:22:18,222 [INFO] Enumerating subdomains for pict.edu
-2025-03-24 11:22:19,645 [WARNING] SecurityTrails API returned status code 429
-2025-03-24 11:22:19,649 [INFO] Getting ASN info for IP 66.96.149.32
-2025-03-24 11:22:21,817 [ERROR] ASN lookup failed: HTTPSConnectionPool(host='ipinfo.io', port=443): Read timed out. (read timeout=2)
-2025-03-24 11:22:21,817 [INFO] Getting SSL certificate logs for pict.edu
-2025-03-24 11:22:26,124 [INFO] SSL certificate lookup completed in 4.31s
-2025-03-24 11:22:26,127 [INFO] Getting Shodan info for IP 66.96.149.32
-2025-03-24 11:22:26,380 [INFO] Shodan lookup completed in 0.25s
-2025-03-24 11:22:26,384 [INFO] Calculating AI-powered risk score for pict.edu
-2025-03-24 11:22:26,385 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
-2025-03-24 11:22:26,385 [INFO] Determining risk factors
-2025-03-24 11:22:26,385 [INFO] Risk factor: Suspicious server location (Unknown)
-2025-03-24 11:22:26,385 [INFO] Identified 1 risk factors
-2025-03-24 11:22:26,385 [INFO] Generating domain summary using Gemini API
-2025-03-24 11:22:29,175 [INFO] Gemini summary generated in 2.79s
-2025-03-24 11:22:29,181 [INFO] Domain analysis for response completed in 13.11s
-[24/Mar/2025 11:22:29] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 2565
-2025-03-24 11:22:29,191 [INFO] Domain check request received for pict.edu
-2025-03-24 11:22:29,194 [INFO] Analyzing domain for response: pict.edu
-2025-03-24 11:22:29,194 [INFO] Getting WHOIS info for pict.edu
-2025-03-24 11:22:29,951 [INFO] WHOIS lookup completed in 0.76s
-2025-03-24 11:22:29,951 [INFO] Getting DNS info for pict.edu
-2025-03-24 11:22:30,002 [INFO] DNS lookup completed in 0.05s
-2025-03-24 11:22:30,002 [INFO] Getting historical DNS records for pict.edu
-2025-03-24 11:22:31,075 [WARNING] SecurityTrails API returned status code 404
-2025-03-24 11:22:31,079 [INFO] Enumerating subdomains for pict.edu
-2025-03-24 11:22:32,615 [WARNING] SecurityTrails API returned status code 429
-2025-03-24 11:22:32,620 [INFO] Getting ASN info for IP 66.96.149.32
-2025-03-24 11:22:33,336 [INFO] ASN lookup completed in 0.72s
-2025-03-24 11:22:33,337 [INFO] Getting SSL certificate logs for pict.edu
-2025-03-24 11:22:35,518 [INFO] SSL certificate lookup completed in 2.18s
-2025-03-24 11:22:35,520 [INFO] Getting Shodan info for IP 66.96.149.32
-2025-03-24 11:22:35,792 [INFO] Shodan lookup completed in 0.27s
-2025-03-24 11:22:35,795 [INFO] Calculating AI-powered risk score for pict.edu
-2025-03-24 11:22:35,796 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
-2025-03-24 11:22:35,796 [INFO] Determining risk factors
-2025-03-24 11:22:35,796 [INFO] Identified 0 risk factors
-2025-03-24 11:22:35,796 [INFO] Generating domain summary using Gemini API
-2025-03-24 11:22:39,273 [INFO] Gemini summary generated in 3.48s
-2025-03-24 11:22:39,276 [INFO] Domain analysis for response completed in 10.08s
-[24/Mar/2025 11:22:39] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 3106
-[24/Mar/2025 11:22:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:23:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:23:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:24:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:24:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:25:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:25:23] "OPTIONS /api/flag_domain HTTP/1.1" 200 0
-Forbidden (Origin checking failed - http://localhost:3000 does not match any trusted origins.): /api/flag_domain
-2025-03-24 11:25:23,419 [WARNING] Forbidden (Origin checking failed - http://localhost:3000 does not match any trusted origins.): /api/flag_domain
-[24/Mar/2025 11:25:23] "POST /api/flag_domain HTTP/1.1" 403 2569
-[24/Mar/2025 11:25:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-Forbidden (Origin checking failed - http://localhost:3000 does not match any trusted origins.): /api/flag_domain
-2025-03-24 11:25:48,346 [WARNING] Forbidden (Origin checking failed - http://localhost:3000 does not match any trusted origins.): /api/flag_domain
-[24/Mar/2025 11:25:48] "POST /api/flag_domain HTTP/1.1" 403 2569
-2025-03-24 11:25:51,674 [INFO] Suspicious domains list request received
-2025-03-24 11:25:51,675 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:25:51,693 [INFO] Total matching domains: 0
-2025-03-24 11:25:51,696 [INFO] Returning 0 domains on page 1
-2025-03-24 11:25:51,696 [INFO] Suspicious domains list generated in 0.02s
-[24/Mar/2025 11:25:51] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-2025-03-24 11:25:51,698 [INFO] Suspicious domains list request received
-2025-03-24 11:25:51,698 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:25:51,700 [INFO] Total matching domains: 0
-2025-03-24 11:25:51,700 [INFO] Returning 0 domains on page 1
-2025-03-24 11:25:51,700 [INFO] Suspicious domains list generated in 0.00s
-[24/Mar/2025 11:25:51] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-[24/Mar/2025 11:26:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:26:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-2025-03-24 11:26:54,430 [INFO] Domain check request received for https://ind.1x-bet.mobi/
-2025-03-24 11:26:54,439 [INFO] Analyzing domain for response: https://ind.1x-bet.mobi/
-2025-03-24 11:26:54,439 [INFO] Getting WHOIS info for https://ind.1x-bet.mobi/
-2025-03-24 11:26:57,142 [INFO] WHOIS lookup completed in 2.70s
-2025-03-24 11:26:57,142 [INFO] Getting DNS info for https://ind.1x-bet.mobi/
-2025-03-24 11:26:57,314 [WARNING] Domain https://ind.1x-bet.mobi/ does not exist (NXDOMAIN)
-2025-03-24 11:26:57,314 [INFO] Domain https://ind.1x-bet.mobi/ does not exist
-2025-03-24 11:26:57,314 [INFO] Domain check for non-existent domain completed in 2.87s
-[24/Mar/2025 11:26:57] "GET /api/analyze?domain=https:%2F%2Find.1x-bet.mobi%2F HTTP/1.1" 200 310
-2025-03-24 11:26:57,351 [INFO] Domain check request received for https://ind.1x-bet.mobi/
-2025-03-24 11:26:57,352 [INFO] Analyzing domain for response: https://ind.1x-bet.mobi/
-2025-03-24 11:26:57,352 [INFO] Getting WHOIS info for https://ind.1x-bet.mobi/
-2025-03-24 11:26:59,316 [INFO] WHOIS lookup completed in 1.96s
-2025-03-24 11:26:59,317 [INFO] Getting DNS info for https://ind.1x-bet.mobi/
-2025-03-24 11:26:59,361 [WARNING] Domain https://ind.1x-bet.mobi/ does not exist (NXDOMAIN)
-2025-03-24 11:26:59,362 [INFO] Domain https://ind.1x-bet.mobi/ does not exist
-2025-03-24 11:26:59,362 [INFO] Domain check for non-existent domain completed in 2.01s
-[24/Mar/2025 11:26:59] "GET /api/analyze?domain=https:%2F%2Find.1x-bet.mobi%2F HTTP/1.1" 200 310
-2025-03-24 11:26:59,365 [INFO] Domain check request received for https://ind.1x-bet.mobi/
-2025-03-24 11:26:59,367 [INFO] Analyzing domain for response: https://ind.1x-bet.mobi/
-2025-03-24 11:26:59,367 [INFO] Getting WHOIS info for https://ind.1x-bet.mobi/
-2025-03-24 11:27:00,822 [INFO] WHOIS lookup completed in 1.45s
-2025-03-24 11:27:00,823 [INFO] Getting DNS info for https://ind.1x-bet.mobi/
-2025-03-24 11:27:00,847 [WARNING] Domain https://ind.1x-bet.mobi/ does not exist (NXDOMAIN)
-2025-03-24 11:27:00,847 [INFO] Domain https://ind.1x-bet.mobi/ does not exist
-2025-03-24 11:27:00,847 [INFO] Domain check for non-existent domain completed in 1.48s
-[24/Mar/2025 11:27:00] "GET /api/analyze?domain=https:%2F%2Find.1x-bet.mobi%2F HTTP/1.1" 200 310
-2025-03-24 11:27:11,330 [INFO] Domain check request received for ind.1x-bet.mobi
-2025-03-24 11:27:11,334 [INFO] Analyzing domain for response: ind.1x-bet.mobi
-2025-03-24 11:27:11,335 [INFO] Getting WHOIS info for ind.1x-bet.mobi
-2025-03-24 11:27:13,306 [INFO] WHOIS lookup completed in 1.97s
-2025-03-24 11:27:13,306 [INFO] Getting DNS info for ind.1x-bet.mobi
-2025-03-24 11:27:13,391 [INFO] DNS lookup completed in 0.08s
-2025-03-24 11:27:13,391 [INFO] Getting historical DNS records for ind.1x-bet.mobi
-2025-03-24 11:27:14,933 [WARNING] SecurityTrails API returned status code 404
-2025-03-24 11:27:14,937 [INFO] Enumerating subdomains for ind.1x-bet.mobi
-2025-03-24 11:27:16,569 [WARNING] SecurityTrails API returned status code 429
-2025-03-24 11:27:16,574 [INFO] Getting ASN info for IP 103.111.115.63
-2025-03-24 11:27:17,187 [INFO] ASN lookup completed in 0.61s
-2025-03-24 11:27:17,188 [INFO] Getting SSL certificate logs for ind.1x-bet.mobi
-[24/Mar/2025 11:27:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-2025-03-24 11:27:18,411 [INFO] SSL certificate lookup completed in 1.22s
-2025-03-24 11:27:18,416 [INFO] Getting Shodan info for IP 103.111.115.63
-2025-03-24 11:27:18,831 [INFO] Shodan lookup completed in 0.42s
-2025-03-24 11:27:18,835 [INFO] Calculating AI-powered risk score for ind.1x-bet.mobi
-2025-03-24 11:27:21,386 [INFO] Extracted AI risk score: 85
-2025-03-24 11:27:21,387 [INFO] Determining risk factors
-2025-03-24 11:27:21,387 [INFO] Identified 0 risk factors
-2025-03-24 11:27:21,387 [INFO] Generating domain summary using Gemini API
-2025-03-24 11:27:24,453 [INFO] Gemini summary generated in 3.07s
-2025-03-24 11:27:24,456 [INFO] Domain analysis for response completed in 13.12s
-[24/Mar/2025 11:27:24] "GET /api/analyze?domain=ind.1x-bet.mobi HTTP/1.1" 200 2950
-2025-03-24 11:27:24,524 [INFO] Domain check request received for ind.1x-bet.mobi
-2025-03-24 11:27:24,526 [INFO] Analyzing domain for response: ind.1x-bet.mobi
-2025-03-24 11:27:24,526 [INFO] Getting WHOIS info for ind.1x-bet.mobi
-2025-03-24 11:27:26,198 [INFO] WHOIS lookup completed in 1.67s
-2025-03-24 11:27:26,198 [INFO] Getting DNS info for ind.1x-bet.mobi
-2025-03-24 11:27:26,231 [INFO] DNS lookup completed in 0.03s
-2025-03-24 11:27:26,231 [INFO] Getting historical DNS records for ind.1x-bet.mobi
-2025-03-24 11:27:27,655 [WARNING] SecurityTrails API returned status code 404
-2025-03-24 11:27:27,659 [INFO] Enumerating subdomains for ind.1x-bet.mobi
-2025-03-24 11:27:29,164 [WARNING] SecurityTrails API returned status code 429
-2025-03-24 11:27:29,169 [INFO] Getting ASN info for IP 103.111.115.63
-2025-03-24 11:27:29,729 [INFO] ASN lookup completed in 0.56s
-2025-03-24 11:27:29,730 [INFO] Getting SSL certificate logs for ind.1x-bet.mobi
-2025-03-24 11:27:31,211 [INFO] SSL certificate lookup completed in 1.48s
-2025-03-24 11:27:31,215 [INFO] Getting Shodan info for IP 103.111.115.63
-2025-03-24 11:27:31,518 [INFO] Shodan lookup completed in 0.30s
-2025-03-24 11:27:31,523 [INFO] Calculating AI-powered risk score for ind.1x-bet.mobi
-2025-03-24 11:27:33,978 [INFO] Extracted AI risk score: 85
-2025-03-24 11:27:33,979 [INFO] Determining risk factors
-2025-03-24 11:27:33,979 [INFO] Identified 0 risk factors
-2025-03-24 11:27:33,979 [INFO] Generating domain summary using Gemini API
-2025-03-24 11:27:37,256 [INFO] Gemini summary generated in 3.28s
-2025-03-24 11:27:37,259 [INFO] Domain analysis for response completed in 12.73s
-[24/Mar/2025 11:27:37] "GET /api/analyze?domain=ind.1x-bet.mobi HTTP/1.1" 200 3108
-[24/Mar/2025 11:27:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:28:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:28:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:29:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:29:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-2025-03-24 11:29:53,860 [INFO] Suspicious domains list request received
-2025-03-24 11:29:53,860 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:29:53,864 [INFO] Total matching domains: 0
-2025-03-24 11:29:53,866 [INFO] Returning 0 domains on page 1
-2025-03-24 11:29:53,866 [INFO] Suspicious domains list generated in 0.01s
-[24/Mar/2025 11:29:53] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-2025-03-24 11:29:53,868 [INFO] Suspicious domains list request received
-2025-03-24 11:29:53,868 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:29:53,869 [INFO] Total matching domains: 0
-2025-03-24 11:29:53,869 [INFO] Returning 0 domains on page 1
-2025-03-24 11:29:53,869 [INFO] Suspicious domains list generated in 0.00s
-[24/Mar/2025 11:29:53] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-2025-03-24 11:30:13,239 [INFO] Suspicious domains list request received
-2025-03-24 11:30:13,240 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:30:13,242 [INFO] Total matching domains: 0
-2025-03-24 11:30:13,243 [INFO] Returning 0 domains on page 1
-2025-03-24 11:30:13,243 [INFO] Suspicious domains list generated in 0.00s
-[24/Mar/2025 11:30:13] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-2025-03-24 11:30:13,245 [INFO] Suspicious domains list request received
-2025-03-24 11:30:13,245 [INFO] Query parameters: page=1, limit=10, search='', filter=
-2025-03-24 11:30:13,246 [INFO] Total matching domains: 0
-2025-03-24 11:30:13,247 [INFO] Returning 0 domains on page 1
-2025-03-24 11:30:13,247 [INFO] Suspicious domains list generated in 0.00s
-[24/Mar/2025 11:30:13] "GET /api/suspicious_domains?page[page]=1&page[limit]=10&page[search]=&limit=10&search=&filter= HTTP/1.1" 200 27
-[24/Mar/2025 11:30:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:30:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:31:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:31:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:32:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:33:19] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:33:48] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:34:18] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:35:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:36:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:37:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:38:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:39:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:40:42] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
-[24/Mar/2025 11:41:04] "HEAD /admin/login/?next=/admin/ HTTP/1.1" 200 0
+Not Found: /health
+2025-03-25 07:04:45,601 [WARNING] Not Found: /health
+Not Found: /health
+2025-03-25 07:04:45,601 [WARNING] Not Found: /health
+[25/Mar/2025 07:04:45] "HEAD /health HTTP/1.1" 404 0
+[25/Mar/2025 07:04:45] "HEAD /health HTTP/1.1" 404 0
+2025-03-25 07:05:04,027 [INFO] Domain check request received for pict.edu
+2025-03-25 07:05:04,031 [INFO] Analyzing domain for response: pict.edu
+2025-03-25 07:05:04,031 [INFO] Getting WHOIS info for pict.edu
+2025-03-25 07:05:04,892 [INFO] WHOIS lookup completed in 0.86s
+2025-03-25 07:05:04,892 [INFO] Getting DNS info for pict.edu
+2025-03-25 07:05:04,913 [INFO] DNS lookup completed in 0.02s
+2025-03-25 07:05:04,913 [INFO] Getting historical DNS records for pict.edu
+2025-03-25 07:05:05,820 [WARNING] SecurityTrails API returned status code 404
+2025-03-25 07:05:05,824 [INFO] Enumerating subdomains for pict.edu
+2025-03-25 07:05:06,862 [WARNING] SecurityTrails API returned status code 429
+2025-03-25 07:05:06,868 [INFO] Getting ASN info for IP 66.96.149.32
+2025-03-25 07:05:07,587 [INFO] ASN lookup completed in 0.72s
+2025-03-25 07:05:07,587 [INFO] Getting SSL certificate logs for pict.edu
+2025-03-25 07:05:11,053 [INFO] SSL certificate lookup completed in 3.47s
+2025-03-25 07:05:11,057 [INFO] Getting Shodan info for IP 66.96.149.32
+2025-03-25 07:05:11,605 [INFO] Shodan lookup completed in 0.55s
+2025-03-25 07:05:11,609 [INFO] Calculating AI-powered risk score for pict.edu
+2025-03-25 07:05:11,609 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
+2025-03-25 07:05:11,609 [INFO] Determining risk factors
+2025-03-25 07:05:11,609 [INFO] Identified 0 risk factors
+2025-03-25 07:05:11,609 [INFO] Generating domain summary using Gemini API
+Not Found: /health
+2025-03-25 07:05:16,189 [WARNING] Not Found: /health
+[25/Mar/2025 07:05:16] "HEAD /health HTTP/1.1" 404 0
+2025-03-25 07:05:22,337 [INFO] Gemini summary generated in 10.73s
+2025-03-25 07:05:22,338 [INFO] Domain analysis for response completed in 18.31s
+[25/Mar/2025 07:05:22] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 3067
+2025-03-25 07:05:23,335 [INFO] Domain check request received for pict.edu
+2025-03-25 07:05:23,336 [INFO] Analyzing domain for response: pict.edu
+2025-03-25 07:05:23,336 [INFO] Getting WHOIS info for pict.edu
+2025-03-25 07:05:23,860 [INFO] WHOIS lookup completed in 0.52s
+2025-03-25 07:05:23,860 [INFO] Getting DNS info for pict.edu
+2025-03-25 07:05:26,017 [INFO] DNS lookup completed in 2.16s
+2025-03-25 07:05:26,018 [INFO] Getting historical DNS records for pict.edu
+2025-03-25 07:05:28,185 [WARNING] SecurityTrails API returned status code 404
+2025-03-25 07:05:28,186 [INFO] Enumerating subdomains for pict.edu
+2025-03-25 07:05:29,691 [WARNING] SecurityTrails API returned status code 429
+2025-03-25 07:05:29,697 [INFO] Getting ASN info for IP 66.96.149.32
+2025-03-25 07:05:30,106 [INFO] ASN lookup completed in 0.41s
+2025-03-25 07:05:30,106 [INFO] Getting SSL certificate logs for pict.edu
+2025-03-25 07:05:34,006 [INFO] SSL certificate lookup completed in 3.90s
+2025-03-25 07:05:34,009 [INFO] Getting Shodan info for IP 66.96.149.32
+2025-03-25 07:05:34,404 [INFO] Shodan lookup completed in 0.39s
+2025-03-25 07:05:34,406 [INFO] Calculating AI-powered risk score for pict.edu
+2025-03-25 07:05:34,406 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
+2025-03-25 07:05:34,406 [INFO] Determining risk factors
+2025-03-25 07:05:34,406 [INFO] Identified 0 risk factors
+2025-03-25 07:05:34,406 [INFO] Generating domain summary using Gemini API
+2025-03-25 07:05:37,676 [INFO] Gemini summary generated in 3.27s
+2025-03-25 07:05:37,679 [INFO] Domain analysis for response completed in 14.34s
+[25/Mar/2025 07:05:37] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 3110
+2025-03-25 07:05:37,683 [INFO] Domain check request received for pict.edu
+2025-03-25 07:05:37,699 [INFO] Analyzing domain for response: pict.edu
+2025-03-25 07:05:37,700 [INFO] Getting WHOIS info for pict.edu
+2025-03-25 07:05:39,212 [INFO] WHOIS lookup completed in 1.51s
+2025-03-25 07:05:39,212 [INFO] Getting DNS info for pict.edu
+2025-03-25 07:05:39,229 [INFO] DNS lookup completed in 0.02s
+2025-03-25 07:05:39,229 [INFO] Getting historical DNS records for pict.edu
+2025-03-25 07:05:40,153 [WARNING] SecurityTrails API returned status code 404
+2025-03-25 07:05:40,155 [INFO] Enumerating subdomains for pict.edu
+2025-03-25 07:05:41,169 [WARNING] SecurityTrails API returned status code 429
+2025-03-25 07:05:41,173 [INFO] Getting ASN info for IP 66.96.149.32
+2025-03-25 07:05:41,573 [INFO] ASN lookup completed in 0.40s
+2025-03-25 07:05:41,574 [INFO] Getting SSL certificate logs for pict.edu
+2025-03-25 07:05:44,747 [INFO] SSL certificate lookup completed in 3.17s
+2025-03-25 07:05:44,749 [INFO] Getting Shodan info for IP 66.96.149.32
+2025-03-25 07:05:44,949 [INFO] Shodan lookup completed in 0.20s
+2025-03-25 07:05:44,953 [INFO] Calculating AI-powered risk score for pict.edu
+2025-03-25 07:05:44,953 [INFO] Domain pict.edu has a trusted TLD, setting low risk score
+2025-03-25 07:05:44,953 [INFO] Determining risk factors
+2025-03-25 07:05:44,953 [INFO] Identified 0 risk factors
+2025-03-25 07:05:44,953 [INFO] Generating domain summary using Gemini API
+Not Found: /health
+2025-03-25 07:05:45,604 [WARNING] Not Found: /health
+[25/Mar/2025 07:05:45] "HEAD /health HTTP/1.1" 404 0
+2025-03-25 07:05:48,159 [INFO] Gemini summary generated in 3.21s
+2025-03-25 07:05:48,161 [INFO] Domain analysis for response completed in 10.46s
+[25/Mar/2025 07:05:48] "GET /api/analyze?domain=pict.edu HTTP/1.1" 200 3183
