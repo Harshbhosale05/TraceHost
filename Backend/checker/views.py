@@ -30,10 +30,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Load API keys from environment variables
-IPINFO_API_KEY = config('IPINFO_API_KEY', default='0e48f52537790e')  
-SHODAN_API_KEY = config('SHODAN_API_KEY', default='iy28xuQax9DSociONeAtReOq5S6nhlIq')
-SECURITY_TRAILS_API_KEY = config('SECURITY_TRAILS_API_KEY', default='LUggU9k5ozhBWzGFUscd_EmT9Tb3MIp2')
-GEMINI_API_KEY = config('GEMINI_API_KEY', default='AIzaSyB0xQWImHqVB2gdMSryLqwI8psGbgoSB14')
+IPINFO_API_KEY = config('IPINFO_API_KEY')  
+SHODAN_API_KEY = config('SHODAN_API_KEY')
+SECURITY_TRAILS_API_KEY = config('SECURITY_TRAILS_API_KEY')
+GEMINI_API_KEY = config('GEMINI_API_KEY')
 
 # Configure Gemini API
 try:
