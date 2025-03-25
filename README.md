@@ -343,4 +343,10 @@ To keep your API keys and other sensitive information secure when using this rep
    - Use your platform's secrets management (GitHub Secrets, Vercel Environment Variables, etc.)
    - Never display environment variables in build logs
 
+5. **Development Best Practices**:
+   - Always ignore `node_modules/` directories (included in `.gitignore`)
+   - Large dependencies should never be committed to the repository
+   - For frontend dependencies, use `package.json` to document requirements
+   - For backend dependencies, use `requirements.txt`
+
 For more information on securing repositories, see [GitHub's guide on removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository). 
