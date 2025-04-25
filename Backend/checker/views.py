@@ -1134,3 +1134,14 @@ def flag_domain(request):
     except Exception as e:
         logger.error(f"Error flagging domain: {str(e)}")
         return JsonResponse({'error': f'Internal server error: {str(e)}'}, status=500)
+
+def health_check(request):
+    """
+    Simple health check endpoint to verify the API is up and running.
+    """
+    logger.info("Health check request received")
+    return JsonResponse({
+        'status': 'ok',
+        'message': 'API is operational',
+        'timestamp': timezone.now().isoformat()
+    })
