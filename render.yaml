@@ -3,6 +3,7 @@ services:
   - type: web
     name: tracehost-backend
     env: python
+    plan: free
     region: oregon
     buildCommand: |
       cd Backend
@@ -30,10 +31,11 @@ services:
         sync: false
     autoDeploy: true
 
-  # Frontend service
+  # Frontend service - using web service with static hosting
   - type: web
     name: tracehost
     env: static
+    plan: free
     buildCommand: cd Frontend && npm install && npm run build
     staticPublishPath: ./Frontend/out
     routes:
