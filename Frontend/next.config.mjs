@@ -8,7 +8,9 @@ const nextConfig = {
   
   // Configure environment variables
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://tracehost-backend.onrender.com/api',
+    NEXT_PUBLIC_BACKEND_URL: process.env.NEXT_PUBLIC_BACKEND_URL || 'https://tracehost-backend.onrender.com',
+    NEXT_PUBLIC_FRONTEND_URL: process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://tracehost.onrender.com',
     NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
   },
   
@@ -16,6 +18,7 @@ const nextConfig = {
   images: {
     domains: ['avatars.githubusercontent.com', 'images.unsplash.com'],
     formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
   },
   
   // Transpile modules that need to be compiled
@@ -35,6 +38,12 @@ const nextConfig = {
       // Set production mode
       config.mode = 'production';
     }
+    
+    // This makes sure webpack can resolve the @ imports
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': '.',
+    };
     
     return config;
   },
