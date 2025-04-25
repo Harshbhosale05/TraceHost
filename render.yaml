@@ -31,7 +31,7 @@ services:
     autoDeploy: true
 
   # Frontend service
-  - type: static
+  - type: web
     name: tracehost
     env: static
     buildCommand: cd Frontend && npm install && npm run build
