@@ -35,7 +35,6 @@ services:
   - type: web
     name: tracehost
     env: static
-    plan: free
     buildCommand: cd Frontend && npm install && npm run build
     staticPublishPath: ./Frontend/out
     routes:
