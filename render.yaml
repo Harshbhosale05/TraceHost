@@ -31,16 +31,15 @@ services:
         sync: false
     autoDeploy: true
 
-  # Frontend service - using web service with static hosting
-  - type: web
+  # Frontend service - proper static site configuration
+  - type: static
     name: tracehost
-    env: static
-    buildCommand: cd Frontend && npm install && npm run build
-    staticPublishPath: ./Frontend/out
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
+    buildCommand: |
+      cd Frontend 
+      npm install 
+      npm install sharp
+      npm run build
+    publishDir: Frontend/out
     envVars:
       - key: NEXT_PUBLIC_API_URL
         value: https://tracehost-backend.onrender.com/api

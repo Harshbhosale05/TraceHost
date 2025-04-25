@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm install sharp --no-save"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.8",
